@@ -67,6 +67,8 @@ export function Contact() {
           </p>
           <a
             href="mailto:hello@pinkcardinal.tech"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-2xl sm:text-3xl font-light text-slate-800 hover:text-cardinal-red transition-colors duration-200"
           >
             hello@pinkcardinal.tech

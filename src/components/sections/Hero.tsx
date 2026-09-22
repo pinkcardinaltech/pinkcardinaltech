@@ -18,14 +18,14 @@ export function Hero() {
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           className="mb-10"
         >
-          <div className="relative w-56 h-56 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-2xl overflow-hidden ring-1 ring-slate-200 shadow-lg">
+          <div className="relative w-72 h-72 sm:w-96 sm:h-96 lg:w-[440px] lg:h-[440px] rounded-2xl overflow-hidden">
             <Image
               src="/images/logo.jpg"
               alt="Pink Cardinal Technology — geometric cardinal in flight"
               fill
               className="object-cover"
               priority
-              sizes="(max-width: 640px) 224px, (max-width: 1024px) 288px, 320px"
+              sizes="(max-width: 640px) 288px, (max-width: 1024px) 384px, 440px"
             />
           </div>
         </motion.div>
@@ -56,6 +56,8 @@ export function Hero() {
           <span className="text-slate-300">·</span>
           <a
             href="mailto:hello@pinkcardinal.tech"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-cardinal-red hover:text-cardinal-deep transition-colors tracking-wide font-medium"
           >
             Get in Touch →

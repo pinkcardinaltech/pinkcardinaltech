@@ -41,6 +41,8 @@ export function Header() {
           {/* Single CTA */}
           <a
             href="mailto:hello@pinkcardinal.tech"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-xs font-medium tracking-wide text-slate-500 hover:text-cardinal-red transition-colors duration-200"
           >
             Get in Touch
