@@ -4,6 +4,7 @@
 >
 > **Entity:** **Pink Cardinal Technology LLC**  
 > **Primary Domain:** `pinkcardinal.tech`  
+> **Founder & Principal:** Patrick Badley (`614.562.0309` · `patrickbadley@gmail.com` · Eden Prairie, MN)  
 > **Brand Identity:** The "Pink Cardinal" honors family heritage, daughters (pink), and the rare real-world biological pink cardinal / unicorn metaphor. Balances playful warmth with elite software engineering & enterprise technology architecture advisory.
 
 ---
@@ -98,3 +99,7 @@ For non-trivial changes:
 2. Stop and obtain human review.
 3. Implement strictly against the approved plan.
 4. Execute `npm run verify` yourself to prove the build passes.
+
+### Voice & Communication Standards
+* **Tone:** Confident, direct, authentic, and free of corporate jargon, passive qualifiers, or robotic fluff.
+* **Email & Communication Sign-Offs:** Never use generic corporate sign-offs like "Best,". Default strictly to Patrick's name and verified phone number (`Patrick` / `614-562-0309`). Patrick will add any contextual phrasing on the fly.
