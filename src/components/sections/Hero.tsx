@@ -37,7 +37,7 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.35 }}
           className="text-xl sm:text-2xl font-light text-slate-700 tracking-tight mb-8 leading-snug"
         >
-          Software ventures &amp; architecture advisory.
+          Software ventures &amp; technology advisory.
         </motion.p>
 
         {/* Text CTAs */}

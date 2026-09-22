@@ -12,11 +12,11 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   title: 'Pink Cardinal Technology',
   description:
-    'Software ventures & architecture advisory. Minneapolis – St. Paul, MN.',
+    'Software ventures & technology advisory. Minneapolis – St. Paul, MN.',
   metadataBase: new URL('https://pinkcardinal.tech'),
   openGraph: {
     title: 'Pink Cardinal Technology',
-    description: 'Software ventures & architecture advisory.',
+    description: 'Software ventures & technology advisory.',
     url: 'https://pinkcardinal.tech',
     siteName: 'Pink Cardinal Technology',
     images: [{ url: '/images/logo.jpg', width: 1200, height: 630 }],
