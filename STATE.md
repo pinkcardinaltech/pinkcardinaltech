@@ -18,12 +18,13 @@
 
 - [x] **Website — Minimal Splash Redesign (`v2.0`):**
   - [x] Stripped all unproven product/advisory detail sections.
-  - [x] Logo as the dominant hero centerpiece (~320px centered splash).
+  - [x] Logo as dominant hero centerpiece (~440px desktop, border ring removed).
   - [x] New font: Space Grotesk — single clean geometric sans-serif.
-  - [x] Color system overhaul: cardinal red (`#9B1B30`) replaces all decorative pink/gold in UI. Pink lives in logo only.
-  - [x] Under 100 words of copy site-wide.
-  - [x] 4 sections: minimal Header, Logo Hero, What We Do + mailto CTA, single-line Footer.
-  - [x] `npm run verify` passes — zero TS errors, clean build (146 kB, down from 159 kB).
+  - [x] Color system overhaul: cardinal red (`#9B1B30`) replaces decorative pink/gold in UI.
+  - [x] Removed top header bar; shifted hero block to optical center to eliminate excess top whitespace.
+  - [x] Under 60 words of copy site-wide; generic pillars ("We Build" / "We Advise") and new-tab `mailto:` links.
+  - [x] Pushed to GitHub repository (`pinkcardinaltech/pinkcardinaltech`) and deployed to Vercel.
+  - [x] `npm run verify` passes — zero TS errors, clean build.
 
 - [x] **Website — Full Corporate Marketing Site (`v1.0`):**
   - [x] Scaffolded Next.js 15 App Router project with TypeScript strict mode, Tailwind CSS, Framer Motion, and Lucide React.
