@@ -23,6 +23,7 @@
   - [x] Color system overhaul: cardinal red (`#9B1B30`) replaces decorative pink/gold in UI.
   - [x] Removed top header bar; shifted hero block to optical center to eliminate excess top whitespace.
   - [x] Tightened vertical spacing between hero and "What We Do" section.
+  - [x] Simplified location to "Minneapolis" across footer and metadata.
   - [x] Under 60 words of copy site-wide; generic pillars ("We Build" / "We Advise") and new-tab `mailto:` links.
   - [x] Pushed to GitHub repository (`pinkcardinaltech/pinkcardinaltech`) and deployed to Vercel.
   - [x] `npm run verify` passes — zero TS errors, clean build.
