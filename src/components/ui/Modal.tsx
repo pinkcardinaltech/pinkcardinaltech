@@ -14,7 +14,6 @@ interface ModalProps {
 export function Modal({ isOpen, onClose, title, children }: ModalProps) {
   const overlayRef = useRef<HTMLDivElement>(null);
 
-  // Close on Escape
   useEffect(() => {
     const handleKey = (e: KeyboardEvent) => {
       if (e.key === 'Escape') onClose();
@@ -56,22 +55,20 @@ export function Modal({ isOpen, onClose, title, children }: ModalProps) {
             transition={{ type: 'spring', stiffness: 350, damping: 28 }}
             className="relative w-full max-w-lg bg-slate-900 border border-white/10 rounded-2xl shadow-2xl overflow-hidden"
           >
-            {/* Gradient top bar */}
-            <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-cardinal-pink via-cardinal-coral to-cardinal-gold" />
+            {/* Cardinal red top accent */}
+            <div className="absolute top-0 left-0 right-0 h-0.5 bg-cardinal-red" />
 
-            {/* Header */}
             <div className="flex items-center justify-between px-6 pt-6 pb-4">
-              <h2 className="text-xl font-semibold text-white">{title}</h2>
+              <h2 className="text-lg font-semibold text-white">{title}</h2>
               <button
                 onClick={onClose}
                 className="p-2 rounded-lg text-slate-400 hover:text-white hover:bg-white/8 transition-colors"
                 aria-label="Close modal"
               >
-                <X size={20} />
+                <X size={18} />
               </button>
             </div>
 
-            {/* Body */}
             <div className="px-6 pb-6">{children}</div>
           </motion.div>
         </motion.div>

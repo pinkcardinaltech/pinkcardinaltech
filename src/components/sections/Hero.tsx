@@ -1,116 +1,75 @@
 'use client';
 
+import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { ArrowRight, ChevronDown } from 'lucide-react';
-import { Button } from '@/components/ui/Button';
-
-const FADE_UP = {
-  initial: { opacity: 0, y: 32 },
-  animate: { opacity: 1, y: 0 },
-};
 
 export function Hero() {
-  const scrollTo = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+  const scrollToWork = () => {
+    document.getElementById('work')?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden pt-16">
-      {/* Layered background glow */}
+    <section className="relative min-h-screen flex flex-col items-center justify-center px-6 overflow-hidden">
+      {/* Very subtle radial vignette — dark, not colorful */}
       <div
         aria-hidden="true"
         className="absolute inset-0 pointer-events-none"
-      >
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[900px] h-[600px] bg-gradient-radial from-cardinal-pink/12 via-cardinal-magenta/5 to-transparent rounded-full blur-3xl" />
-        <div className="absolute top-1/4 left-1/4 w-[400px] h-[400px] bg-cardinal-gold/6 rounded-full blur-3xl" />
-        <div className="absolute bottom-1/4 right-1/4 w-[300px] h-[300px] bg-cardinal-coral/5 rounded-full blur-3xl" />
-      </div>
-
-      {/* Subtle grid pattern */}
-      <div
-        aria-hidden="true"
-        className="absolute inset-0 opacity-[0.025]"
         style={{
-          backgroundImage:
-            'linear-gradient(rgba(248,250,252,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(248,250,252,0.5) 1px, transparent 1px)',
-          backgroundSize: '60px 60px',
+          background:
+            'radial-gradient(ellipse 80% 60% at 50% 40%, rgba(15,23,42,0) 0%, rgba(2,6,23,0.6) 100%)',
         }}
       />
 
-      <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        {/* Eyebrow badge */}
+      <div className="relative z-10 flex flex-col items-center text-center max-w-xl">
+        {/* Logo — the splash centerpiece */}
         <motion.div
-          {...FADE_UP}
-          transition={{ duration: 0.6, delay: 0.1 }}
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cardinal-pink/10 border border-cardinal-pink/25 text-cardinal-coral text-sm font-medium mb-8"
+          initial={{ opacity: 0, scale: 0.92 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+          className="mb-10"
         >
-          <span className="w-1.5 h-1.5 rounded-full bg-cardinal-pink animate-pulse" />
-          Minneapolis – St. Paul, MN · pinkcardinal.tech
+          <div className="relative w-56 h-56 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-2xl overflow-hidden ring-1 ring-white/8 shadow-2xl">
+            <Image
+              src="/images/logo.jpg"
+              alt="Pink Cardinal Technology — geometric cardinal in flight"
+              fill
+              className="object-cover"
+              priority
+              sizes="(max-width: 640px) 224px, (max-width: 1024px) 288px, 320px"
+            />
+          </div>
         </motion.div>
 
-        {/* Main headline */}
-        <motion.h1
-          {...FADE_UP}
-          transition={{ duration: 0.7, delay: 0.2 }}
-          className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-[1.1] tracking-tight mb-6"
-        >
-          Modern Software Ventures{' '}
-          <span className="block text-gradient-cardinal">&amp; Strategic Technology Architecture.</span>
-        </motion.h1>
-
-        {/* Subtitle */}
+        {/* Tagline */}
         <motion.p
-          {...FADE_UP}
-          transition={{ duration: 0.7, delay: 0.35 }}
-          className="max-w-2xl mx-auto text-lg sm:text-xl text-slate-400 leading-relaxed mb-10"
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.4 }}
+          className="text-xl sm:text-2xl font-light text-slate-200 tracking-tight mb-8 leading-snug"
         >
-          We build high-converting mobile self-service systems for essential
-          industries—and provide executive technology architecture advisory for
-          enterprise modernization.
+          Software ventures &amp; architecture advisory.
         </motion.p>
 
-        {/* CTAs */}
+        {/* Text CTAs */}
         <motion.div
-          {...FADE_UP}
-          transition={{ duration: 0.6, delay: 0.5 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4"
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.65 }}
+          className="flex items-center gap-6 text-sm"
         >
-          <Button
-            variant="primary"
-            size="lg"
-            onClick={() => scrollTo('ventures')}
-            className="group w-full sm:w-auto"
+          <button
+            onClick={scrollToWork}
+            className="text-slate-500 hover:text-slate-200 transition-colors tracking-wide"
           >
-            Explore Software Ventures
-            <ArrowRight
-              size={18}
-              className="group-hover:translate-x-1 transition-transform"
-            />
-          </Button>
-          <Button
-            variant="secondary"
-            size="lg"
-            onClick={() => scrollTo('advisory')}
-            className="w-full sm:w-auto"
+            Our Work ↓
+          </button>
+          <span className="text-slate-700">·</span>
+          <a
+            href="mailto:hello@pinkcardinal.tech"
+            className="text-cardinal-red hover:text-cardinal-muted transition-colors tracking-wide font-medium"
           >
-            Advisory Services
-          </Button>
-        </motion.div>
-
-        {/* Scroll indicator */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.2, duration: 0.6 }}
-          className="mt-20 flex flex-col items-center gap-2 text-slate-600"
-        >
-          <span className="text-xs tracking-widest uppercase">Explore</span>
-          <motion.div
-            animate={{ y: [0, 6, 0] }}
-            transition={{ repeat: Infinity, duration: 1.5, ease: 'easeInOut' }}
-          >
-            <ChevronDown size={20} />
-          </motion.div>
+            Get in Touch →
+          </a>
         </motion.div>
       </div>
     </section>

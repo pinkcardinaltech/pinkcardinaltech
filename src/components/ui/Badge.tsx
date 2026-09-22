@@ -1,20 +1,18 @@
 import { type HTMLAttributes } from 'react';
 
-type BadgeVariant = 'pink' | 'gold' | 'slate' | 'coral';
+type BadgeVariant = 'red' | 'slate';
 
 interface BadgeProps extends HTMLAttributes<HTMLSpanElement> {
   variant?: BadgeVariant;
 }
 
 const variantClasses: Record<BadgeVariant, string> = {
-  pink: 'bg-cardinal-pink/15 text-cardinal-coral border-cardinal-pink/30',
-  gold: 'bg-cardinal-gold/15 text-cardinal-amber border-cardinal-gold/30',
-  slate: 'bg-white/8 text-slate-300 border-white/12',
-  coral: 'bg-cardinal-coral/15 text-cardinal-coral border-cardinal-coral/30',
+  red: 'bg-cardinal-red/15 text-cardinal-muted border-cardinal-red/30',
+  slate: 'bg-white/6 text-slate-400 border-white/10',
 };
 
 export function Badge({
-  variant = 'pink',
+  variant = 'slate',
   className = '',
   children,
   ...props
