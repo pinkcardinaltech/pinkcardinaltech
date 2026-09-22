@@ -7,12 +7,12 @@ const PILLARS = [
   {
     icon: <Code2 size={18} />,
     label: 'We Build',
-    body: 'Self-service software for essential industries — municipal payments, healthcare billing, and field operations.',
+    body: 'Purposeful software for organizations with real operational complexity.',
   },
   {
     icon: <Layers size={18} />,
     label: 'We Advise',
-    body: 'Technology architecture leadership for operators navigating modernization, cloud migration, and enterprise integration.',
+    body: 'Senior technology guidance when the decisions matter.',
   },
 ] as const;
 
