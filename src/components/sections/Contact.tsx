@@ -18,7 +18,7 @@ const PILLARS = [
 
 export function Contact() {
   return (
-    <section id="work" className="py-24 lg:py-32 px-6 bg-white">
+    <section id="work" className="pt-8 pb-20 sm:pt-12 sm:pb-28 px-6 bg-white">
       <div className="max-w-4xl mx-auto">
         {/* Section label */}
         <motion.p

@@ -9,8 +9,8 @@ export function Hero() {
   };
 
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center px-6 overflow-hidden bg-white pb-16 sm:pb-24">
-      <div className="relative z-10 flex flex-col items-center text-center max-w-xl -translate-y-4 sm:-translate-y-8">
+    <section className="relative min-h-screen flex flex-col items-center justify-center px-6 overflow-hidden bg-white">
+      <div className="relative z-10 flex flex-col items-center text-center max-w-xl -translate-y-6 sm:-translate-y-10">
         {/* Logo — the splash centerpiece */}
         <motion.div
           initial={{ opacity: 0, scale: 0.94 }}
