@@ -57,6 +57,11 @@ assets/            ← Official branding, logos, and vector assets
 
 ## 4. Quality Gates & Verification
 
+### Dev Server — Human Owns This
+> **Never run `npm run dev` or any long-running dev server process.** The human runs the dev server themselves. The agent's only permitted runtime commands are `npx tsc --noEmit` and `npm run build` (via `npm run verify`).
+
+
+
 ### Before Marking ANY Task Complete
 Never declare a task complete without running the deterministic quality gate:
 
