@@ -18,7 +18,7 @@ const PILLARS = [
 
 export function Contact() {
   return (
-    <section id="work" className="py-24 lg:py-32 px-6">
+    <section id="work" className="py-24 lg:py-32 px-6 bg-white">
       <div className="max-w-4xl mx-auto">
         {/* Section label */}
         <motion.p
@@ -26,7 +26,7 @@ export function Contact() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, margin: '-80px' }}
           transition={{ duration: 0.5 }}
-          className="text-xs font-medium tracking-[0.2em] text-slate-600 uppercase mb-12"
+          className="text-xs font-medium tracking-[0.2em] text-slate-400 uppercase mb-12"
         >
           What We Do
         </motion.p>
@@ -47,7 +47,7 @@ export function Contact() {
                   {pillar.label}
                 </span>
               </div>
-              <p className="text-slate-400 text-sm leading-relaxed font-light">
+              <p className="text-slate-500 text-sm leading-relaxed font-light">
                 {pillar.body}
               </p>
             </motion.div>
@@ -60,14 +60,14 @@ export function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-60px' }}
           transition={{ duration: 0.55 }}
-          className="border-t border-white/6 pt-12"
+          className="border-t border-slate-100 pt-12"
         >
-          <p className="text-xs font-medium tracking-[0.2em] text-slate-600 uppercase mb-4">
+          <p className="text-xs font-medium tracking-[0.2em] text-slate-400 uppercase mb-4">
             Let&apos;s Talk
           </p>
           <a
             href="mailto:hello@pinkcardinal.tech"
-            className="text-2xl sm:text-3xl font-light text-slate-200 hover:text-white transition-colors duration-200"
+            className="text-2xl sm:text-3xl font-light text-slate-800 hover:text-cardinal-red transition-colors duration-200"
           >
             hello@pinkcardinal.tech
           </a>

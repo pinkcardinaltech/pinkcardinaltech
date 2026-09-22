@@ -5,7 +5,7 @@ import { Footer } from '@/components/sections/Footer';
 
 export default function HomePage() {
   return (
-    <main className="relative bg-slate-950 text-slate-50 overflow-x-hidden">
+    <main className="relative bg-white text-slate-900 overflow-x-hidden">
       <Header />
       <Hero />
       <Contact />

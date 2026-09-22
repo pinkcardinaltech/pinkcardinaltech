@@ -16,6 +16,15 @@
   - [x] Finalized official visual identity: Concept 3 (Unicorn Cardinal in Flight with golden star horn crest and clean typography) stored at `assets/pink-cardinal-logo.jpg`.
   - [x] Initialized workspace scaffolding and established `AGENTS.md` invariants.
 
+- [x] **Website — Minimal Splash Redesign (`v2.0`):**
+  - [x] Stripped all unproven product/advisory detail sections.
+  - [x] Logo as the dominant hero centerpiece (~320px centered splash).
+  - [x] New font: Space Grotesk — single clean geometric sans-serif.
+  - [x] Color system overhaul: cardinal red (`#9B1B30`) replaces all decorative pink/gold in UI. Pink lives in logo only.
+  - [x] Under 100 words of copy site-wide.
+  - [x] 4 sections: minimal Header, Logo Hero, What We Do + mailto CTA, single-line Footer.
+  - [x] `npm run verify` passes — zero TS errors, clean build (146 kB, down from 159 kB).
+
 - [x] **Website — Full Corporate Marketing Site (`v1.0`):**
   - [x] Scaffolded Next.js 15 App Router project with TypeScript strict mode, Tailwind CSS, Framer Motion, and Lucide React.
   - [x] Brand design system: custom Tailwind tokens (`cardinal.*` palette), glassmorphism utilities, glow utilities, gradient text utilities.
