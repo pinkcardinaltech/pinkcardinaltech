@@ -12,7 +12,7 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   title: 'Pink Cardinal Technology',
   description:
-    'Software ventures & technology advisory. Minneapolis – St. Paul, MN.',
+    'Software ventures & technology advisory. Minneapolis.',
   metadataBase: new URL('https://pinkcardinal.tech'),
   openGraph: {
     title: 'Pink Cardinal Technology',

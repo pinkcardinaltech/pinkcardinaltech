@@ -7,7 +7,7 @@ export function Footer() {
             © 2026 Pink Cardinal Technology LLC. All rights reserved.
           </p>
           <p className="text-xs text-slate-400">
-            Minneapolis / St. Paul, MN &nbsp;·&nbsp; pinkcardinal.tech
+            Minneapolis &nbsp;·&nbsp; pinkcardinal.tech
           </p>
         </div>
       </div>
